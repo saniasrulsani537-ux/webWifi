@@ -128,19 +128,33 @@ textarea {
   display: block;
 }
 
-/*  BAGIAN PROFILE ABOUT */
+/* BAGIAN ABOUT */
 .profile-card {
   display: flex;
   gap: 20px;
-  background: #a8bbdd;
+  background: #000000;
   padding: 20px;
   border-radius: 12px;
-  color: rgb(0, 0, 0);
+  align-items: center;
 }
 
+/* GAMBAR */
 .profile-card img {
   width: 150px;
   border-radius: 12px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-card img {
+    width: 120px;
+  }
 }
 
 /* MAPS / PETA */
